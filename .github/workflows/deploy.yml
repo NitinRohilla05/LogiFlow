@@ -40,6 +40,7 @@ jobs:
         run: npm run build
         env:
           NEXT_PUBLIC_API_URL: https://YOUR-BACKEND-DOMAIN/api
+          NEXT_PUBLIC_BASE_PATH: /LogiFlow
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

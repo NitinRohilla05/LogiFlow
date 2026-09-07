@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { assetPath } from "@/lib/assetPath";
 import Image from "next/image";
 import { ArrowRight, MapPin, PackageCheck, Truck } from "lucide-react";
 
@@ -10,7 +11,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero/hero-bg.png"
+          src={assetPath("/images/hero/hero-bg.png")}
           alt="LogiFlow delivery truck at a modern warehouse"
           fill
           priority

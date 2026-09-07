@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { assetPath } from "@/lib/assetPath";
 import {
   ArrowRight,
   Boxes,
@@ -115,7 +116,7 @@ export default function ServicesPage() {
       <section className="relative overflow-hidden bg-slate-950 pb-24 pt-36 text-white">
         <div className="absolute inset-0">
           <Image
-            src="/images/hero/hero-bg.png"
+            src={assetPath("/images/hero/hero-bg.png")}
             alt=""
             fill
             priority

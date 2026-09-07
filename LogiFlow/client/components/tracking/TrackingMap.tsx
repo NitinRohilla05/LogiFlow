@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { MapPin, Navigation, Truck } from "lucide-react";
 import { useEffect, useState } from "react";
+import { assetPath } from "@/lib/assetPath";
 
 const routePoints = [
   {
@@ -138,7 +139,7 @@ export default function TrackingMap() {
             {/* Map */}
             <div className="relative min-h-[560px] overflow-hidden">
               <Image
-                src="/images/tracking/tracking-map.png"
+                src={assetPath("/images/tracking/tracking-map.png")}
                 alt="Shipment tracking dashboard"
                 fill
                 className="object-cover opacity-20"

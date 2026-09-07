@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { assetPath } from "@/lib/assetPath";
 import { ArrowRight, CheckCircle2, Zap, ShieldCheck } from "lucide-react";
 
 const benefits = [
@@ -17,7 +18,7 @@ export default function CTA() {
       {/* Background Image with Deep Shading */}
       <div className="absolute inset-0 pointer-events-none">
         <Image
-          src="/images/delivery/delivery-truck.png"
+          src={assetPath("/images/delivery/delivery-truck.png")}
           alt=""
           fill
           className="object-cover opacity-[.08]"

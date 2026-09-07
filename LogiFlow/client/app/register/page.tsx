@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { assetPath } from "@/lib/assetPath";
 import { FormEvent, useState } from "react";
 import {
   ArrowRight,
@@ -74,7 +75,7 @@ export default function RegisterPage() {
       <div className="grid min-h-screen pt-[92px] lg:grid-cols-[1.05fr_0.95fr]">
         <section className="relative hidden overflow-hidden lg:block">
           <Image
-            src="/images/delivery/delivery-truck.png"
+            src={assetPath("/images/delivery/delivery-truck.png")}
             alt="LogiFlow truck at a distribution hub"
             fill
             priority

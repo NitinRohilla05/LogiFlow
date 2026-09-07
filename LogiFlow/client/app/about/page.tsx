@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { assetPath } from "@/lib/assetPath";
 import {
   ArrowRight,
   CheckCircle2,
@@ -50,7 +51,7 @@ export default function AboutPage() {
       <section className="relative overflow-hidden bg-slate-950 pb-24 pt-36 text-white">
         <div className="absolute inset-0">
           <Image
-            src="/images/warehouse/warehouse-bg.png"
+            src={assetPath("/images/warehouse/warehouse-bg.png")}
             alt=""
             fill
             priority
@@ -93,7 +94,7 @@ export default function AboutPage() {
           <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
             <div className="relative overflow-hidden rounded-[32px]">
               <Image
-                src="/images/warehouse/warehouse-interior.png"
+                src={assetPath("/images/warehouse/warehouse-interior.png")}
                 alt="Modern logistics warehouse interior"
                 width={1200}
                 height={900}

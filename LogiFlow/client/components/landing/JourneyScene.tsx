@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { assetPath } from "@/lib/assetPath";
 
 function clamp(value: number) {
   return Math.max(0, Math.min(1, value));
@@ -117,7 +118,7 @@ export default function JourneyScene() {
       <div className="relative sticky top-0 h-screen overflow-hidden">
         {/* Background yard image */}
         <img
-          src="/images/hero/logistics-yard.png"
+          src={assetPath("/images/hero/logistics-yard.png")}
           alt=""
           className="absolute inset-0 h-full w-full object-cover"
         />
@@ -133,14 +134,14 @@ export default function JourneyScene() {
           }}
         >
           <img
-            src="/images/hero/empty-flatbed-truck.png"
+            src={assetPath("/images/hero/empty-flatbed-truck.png")}
             alt="Flatbed delivery truck"
             className="block w-full drop-shadow-[0_20px_10px_rgba(10,16,20,0.42)]"
           />
 
           {/* Shipping container placed on flatbed */}
           <img
-            src="/images/hero/shipping-container.png"
+            src={assetPath("/images/hero/shipping-container.png")}
             alt=""
             className="absolute bottom-[20%] left-[0.3%] w-[62%] drop-shadow-[0_12px_7px_rgba(10,16,20,0.25)]"
             style={{ opacity: truckContainerOpacity }}
@@ -167,7 +168,7 @@ export default function JourneyScene() {
           }}
         >
           <img
-            src="/images/hero/realistic-jcb.png"
+            src={assetPath("/images/hero/realistic-jcb.png")}
             alt="JCB loader"
             className="block w-full drop-shadow-[0_18px_9px_rgba(10,16,20,0.42)]"
           />
@@ -176,7 +177,7 @@ export default function JourneyScene() {
         {/* Loose Container in flight toward flatbed */}
         {looseContainerVisible && (
           <img
-            src="/images/hero/shipping-container.png"
+            src={assetPath("/images/hero/shipping-container.png")}
             alt=""
             className="pointer-events-none absolute bottom-[34%] left-0 z-[25] w-[min(44vw,650px)] will-change-transform"
             style={{
@@ -195,7 +196,7 @@ export default function JourneyScene() {
           }}
         >
           <img
-            src="/images/hero/truck-front-loaded.png"
+            src={assetPath("/images/hero/truck-front-loaded.png")}
             alt="Loaded truck entering the warehouse"
             className="block w-full drop-shadow-[0_24px_14px_rgba(10,16,20,0.5)]"
           />
