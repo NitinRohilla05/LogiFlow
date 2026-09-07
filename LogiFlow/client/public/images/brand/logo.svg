@@ -1,0 +1,35 @@
+<svg
+  width="220"
+  height="64"
+  viewBox="0 0 220 64"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Logo Mark -->
+  <rect x="4" y="8" width="48" height="48" rx="14" fill="currentColor"/>
+
+  <path
+    d="M14 20H34L44 32L34 44H14L24 32L14 20Z"
+    fill="white"
+  />
+
+  <circle
+    cx="21"
+    cy="32"
+    r="4"
+    fill="currentColor"
+  />
+
+  <!-- Brand Name -->
+  <text
+    x="66"
+    y="40"
+    fill="currentColor"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="27"
+    font-weight="700"
+    letter-spacing="-0.8"
+  >
+    LogiFlow
+  </text>
+</svg>
